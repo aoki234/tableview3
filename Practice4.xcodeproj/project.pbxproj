@@ -15,6 +15,11 @@
 		49172C831EC5815800042FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49172C811EC5815800042FFA /* LaunchScreen.storyboard */; };
 		49172C8E1EC5815800042FFA /* Practice4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49172C8D1EC5815800042FFA /* Practice4Tests.m */; };
 		49172C991EC5815800042FFA /* Practice4UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49172C981EC5815800042FFA /* Practice4UITests.m */; };
+		49172CAB1EC581A000042FFA /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49172CA71EC581A000042FFA /* Fabric.framework */; };
+		49172CAC1EC581A000042FFA /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49172CA81EC581A000042FFA /* TwitterKit.framework */; };
+		49172CAD1EC581A000042FFA /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49172CA91EC581A000042FFA /* TwitterKitResources.bundle */; };
+		49172CAE1EC581A000042FFA /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49172CAA1EC581A000042FFA /* TwitterCore.framework */; };
+		49172CB11EC5886800042FFA /* VModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49172CB01EC5886800042FFA /* VModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		49172C941EC5815800042FFA /* Practice4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Practice4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49172C981EC5815800042FFA /* Practice4UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Practice4UITests.m; sourceTree = "<group>"; };
 		49172C9A1EC5815800042FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49172CA71EC581A000042FFA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		49172CA81EC581A000042FFA /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		49172CA91EC581A000042FFA /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		49172CAA1EC581A000042FFA /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		49172CAF1EC5886800042FFA /* VModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VModel.h; sourceTree = "<group>"; };
+		49172CB01EC5886800042FFA /* VModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49172CAB1EC581A000042FFA /* Fabric.framework in Frameworks */,
+				49172CAE1EC581A000042FFA /* TwitterCore.framework in Frameworks */,
+				49172CAC1EC581A000042FFA /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +123,13 @@
 				49172C7F1EC5815800042FFA /* Assets.xcassets */,
 				49172C811EC5815800042FFA /* LaunchScreen.storyboard */,
 				49172C841EC5815800042FFA /* Info.plist */,
+				49172CA71EC581A000042FFA /* Fabric.framework */,
+				49172CA81EC581A000042FFA /* TwitterKit.framework */,
+				49172CA91EC581A000042FFA /* TwitterKitResources.bundle */,
+				49172CAA1EC581A000042FFA /* TwitterCore.framework */,
 				49172C731EC5815800042FFA /* Supporting Files */,
+				49172CAF1EC5886800042FFA /* VModel.h */,
+				49172CB01EC5886800042FFA /* VModel.m */,
 			);
 			path = Practice4;
 			sourceTree = "<group>";
@@ -150,6 +170,7 @@
 				49172C6C1EC5815800042FFA /* Sources */,
 				49172C6D1EC5815800042FFA /* Frameworks */,
 				49172C6E1EC5815800042FFA /* Resources */,
+				49172CA61EC5817D00042FFA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -246,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49172CAD1EC581A000042FFA /* TwitterKitResources.bundle in Resources */,
 				49172C831EC5815800042FFA /* LaunchScreen.storyboard in Resources */,
 				49172C801EC5815800042FFA /* Assets.xcassets in Resources */,
 				49172C7E1EC5815800042FFA /* Main.storyboard in Resources */,
@@ -268,6 +290,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49172CA61EC5817D00042FFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a767d5e5b5da22cf58a49c36a511b0733f4546d9 dd4c9e74d92ecebc2b07854555eba97c08aa0c4c700ba1c5564595135f1a4c6c";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49172C6C1EC5815800042FFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +313,7 @@
 			files = (
 				49172C7B1EC5815800042FFA /* ViewController.m in Sources */,
 				49172C781EC5815800042FFA /* AppDelegate.m in Sources */,
+				49172CB11EC5886800042FFA /* VModel.m in Sources */,
 				49172C751EC5815800042FFA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,10 +465,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Practice4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = None.Practice4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.0;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Debug;
 		};
@@ -437,10 +482,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Practice4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = None.Practice4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.0;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Release;
 		};
@@ -509,6 +560,7 @@
 				49172C9F1EC5815800042FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49172CA01EC5815800042FFA /* Build configuration list for PBXNativeTarget "Practice4Tests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +569,7 @@
 				49172CA21EC5815800042FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49172CA31EC5815800042FFA /* Build configuration list for PBXNativeTarget "Practice4UITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +578,7 @@
 				49172CA51EC5815800042FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
